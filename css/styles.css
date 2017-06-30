@@ -1,3 +1,91 @@
 body{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#home{
   background-color: pink;
+}
+
+
+#bannerPic {
+  width:100%;
+  position: relative;
+}
+
+#kaley{
+  font-size: 60px;
+font-family: 'Carrois Gothic SC', sans-serif;
+  position: absolute; 
+   top: 360px; 
+   left: 10px;
+   color: white;
+   letter-spacing: 5px;
+}
+
+#kaley span{
+   background: rgb(0, 0, 0);
+   background: rgba(0, 0, 0, 0.7);
+
+}
+
+
+#topmenu{
+  font-family: 'Carrois Gothic SC', sans-serif;
+  list-style-type: none;
+  text-align: center;
+  font-size: 20px;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #ff4d6a;
+}
+
+
+.navigation{
+  display: inline;
+  margin: 25px;
+}
+
+
+.sectionTitle{
+  font-family: 'Carrois Gothic SC', sans-serif;
+  font-size: 40px;
+  text-align: center;
+  line-height: .5px;
+}
+
+
+
+.innards{
+  border: 1px solid;
+  padding: 10px;
+  margin-left: 75px;
+  margin-right: 75px;
+  background-color: pink;
+  border-radius: 25px;
+}
+
+#contactform{
+  text-align: center;
+  border: 1px solid;
+  padding: 10px;
+  background-color: white;
+  border-radius: 25px;
+  margin-left: 450px;
+  margin-right: 450px;
+
+}
+#plants{
+  display:block;
+  margin:auto;
+}
+
+footer{
+  text-align: center;
+  color:#ff4d6a;
 }
