@@ -2,10 +2,6 @@ body{
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-#home{
-  background-color: pink;
-}
-
 
 #bannerPic {
   width:100%;
@@ -33,12 +29,12 @@ font-family: 'Carrois Gothic SC', sans-serif;
   font-family: 'Carrois Gothic SC', sans-serif;
   list-style-type: none;
   text-align: center;
-  font-size: 20px;
 }
 
 a{
-  color: black;
+  color: white;
   text-decoration: none;
+  font-size: 35px;
 }
 
 a:hover{
@@ -48,7 +44,12 @@ a:hover{
 
 .navigation{
   display: inline;
-  margin: 25px;
+  background-color: #ff4d6a;
+  padding: 20px;
+}
+
+.navigation:hover{
+  background-color: white;
 }
 
 
@@ -62,27 +63,23 @@ a:hover{
 
 
 .innards{
-  border: 1px solid;
+  border: 1px solid #ff4d6a;
   padding: 10px;
   margin: auto;
-  background-color: pink;
+  background-color: white;
   border-radius: 25px;
   width: 75%;
 }
 
 #contactform{
   text-align: center;
-  border: 1px solid;
+  border: 1px solid #ff4d6a;
   padding: 10px;
   background-color: white;
   border-radius: 25px;
   margin: auto;
   width: 25%;
 
-}
-#plants{
-  display:block;
-  margin:auto;
 }
 
 footer{
