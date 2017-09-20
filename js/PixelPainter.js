@@ -27,7 +27,6 @@ var pixelPainter = (function(){
     }
   }
 
-
   makeGrid(20, 20, "rowPixel", "colpixel", "25px", ppMom);
   makeGrid(3, 6, "paletteRow", "palettePix", "40px", paletteMom);
   makeGrid(4, 1, "eraseTable", "eraseClear", "60px", paletteMom);
@@ -38,9 +37,11 @@ var pixelPainter = (function(){
     }
   }(paletteCells));
 
-  for (var i = 0; i < paletteCells.length; i++){
-    paletteCells[i].addEventListener("click", selectColor);
-  }
+  (function (){
+    for (var i = 0; i < paletteCells.length; i++){
+      paletteCells[i].addEventListener("click", selectColor);
+    }
+  }());
 
   eraseClearBox[0].innerHTML = "Erase";
   eraseClearBox[1].innerHTML = "Clear";
@@ -52,62 +53,58 @@ var pixelPainter = (function(){
   eraseClearBox[3].addEventListener("click", loadPic);
 
 
-function selectColor(x){
-  currentColor = x.target.style.backgroundColor;
-  console.log(currentColor);
-}
+  function selectColor(x){
+    currentColor = x.target.style.backgroundColor;
+  }
 
-for (var i = 0; i < canvasCell.length; i++) {
-  canvasCell[i].addEventListener("click", clickColor);
-  canvasCell[i].addEventListener("mouseover", paintColor);
-}
-ppMom.addEventListener("mousedown", drawMe);
-document.body.addEventListener("mouseup", stopDraw);
+  (function (){
+    for (var i = 0; i < canvasCell.length; i++) {
+      canvasCell[i].addEventListener("click", clickColor);
+      canvasCell[i].addEventListener("mouseover", paintColor);
+    }
+  }());
 
-function paintColor(){
-  if (isDrawing){
+  ppMom.addEventListener("mousedown", drawMe);
+  document.body.addEventListener("mouseup", stopDraw);
+
+  function paintColor(){
+    if (isDrawing){
+      this.style.backgroundColor = currentColor;
+    }
+  }
+
+  function clickColor(){
     this.style.backgroundColor = currentColor;
   }
-}
 
-function clickColor(){
-  this.style.backgroundColor = currentColor;
-}
-
-function eraseColor(){
-  currentColor = "#ffffff";
-}
-
-function drawMe (){
-  isDrawing  = true;
-}
-
-function stopDraw (){
-  isDrawing = false;
-}
-
-function clearCanvas(){
-  for (var i = 0; i < canvasCell.length; i++){
-    canvasCell[i].style.backgroundColor = "#ffffff";
+  function eraseColor(){
+    currentColor = "#ffffff";
   }
-}
 
-function savePic(){
-  savedPicture = [];
-  for (var i = 0; i < canvasCell.length; i++){
-    savedPicture.push(canvasCell[i].style.backgroundColor);
+  function drawMe (){
+    isDrawing  = true;
   }
-}
 
-function loadPic(){
-  for (var i =0; i < canvasCell.length; i++){
-    canvasCell[i].style.backgroundColor = savedPicture[i];
+  function stopDraw (){
+    isDrawing = false;
   }
-}
 
-  return {
+  function clearCanvas(){
+    for (var i = 0; i < canvasCell.length; i++){
+      canvasCell[i].style.backgroundColor = "#ffffff";
+    }
+  }
 
+  function savePic(){
+    savedPicture = [];
+    for (var i = 0; i < canvasCell.length; i++){
+      savedPicture.push(canvasCell[i].style.backgroundColor);
+    }
+  }
 
-
-  };
+  function loadPic(){
+    for (var i =0; i < canvasCell.length; i++){
+     canvasCell[i].style.backgroundColor = savedPicture[i];
+    }
+  }
 }());
