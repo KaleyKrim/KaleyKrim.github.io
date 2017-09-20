@@ -55,7 +55,7 @@ h1:hover{
   transform: scale(1.2);
 }
 
-.eraseClear{
+.tools{
   display: inline-block;
   box-sizing: border-box;
   position: relative;
@@ -72,7 +72,7 @@ h1:hover{
 }
 
 
-.eraseClear:hover{
+.tools:hover{
   background-color:  #ff0066;
 }
 
