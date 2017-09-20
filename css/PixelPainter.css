@@ -1,0 +1,89 @@
+.rowpixel{
+
+  float: right;
+  display:inline;
+  box-sizing:border-box;
+
+}
+
+
+h1{
+  margin-right: 54%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  font-size: 60px;
+  border-radius: 50px;
+}
+
+h1:hover{
+  background-color: #ff0066;
+  transition-duration: 1s;
+}
+
+.colpixel{
+  box-sizing:border-box;
+  background-color: white;
+}
+
+.stampPic{
+  background-color: red;
+}
+
+.colpixel {
+  border: 1px solid;
+  border-color: black;
+
+}
+
+.paletteRow{
+  display:inline;
+  box-sizing:border-box;
+  float: right;
+}
+
+.palettePix{
+  box-sizing:border-box;
+  border: 2px solid;
+  border-color: black;
+  border-radius: 15px;
+  cursor:pointer;
+}
+
+.palettePix:hover{
+  transform: scale(1.2);
+}
+
+.eraseClear{
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+  padding-top: 15%;
+  margin-left: 25%;
+  font-size: 20px;
+  justify-content: center;
+  cursor:pointer;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  background-color: black;
+  border-radius: 15px;
+}
+
+
+.eraseClear:hover{
+  background-color:  #ff0066;
+}
+
+#palette{
+  display: inline-block;
+  position: absolute;
+  margin-right: 50%;
+}
+
+#pixelPainter{
+  display: inline-block;
+  margin-left: 130px;
+  box-shadow: 4px;
+}
