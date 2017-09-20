@@ -11,8 +11,6 @@ var pixelPainter = (function(){
   var currentColor = colorArray[0];
   var isDrawing = false;
   var savedPicture = [];
-  ppMom.addEventListener("mousedown", drawMe);
-document.body.addEventListener("mouseup", stopDraw);
 
   function makeGrid(rows, columns, rowClass, colClass, cellHeight, parentDiv){
     for (var x=0; x<rows; x++){
@@ -28,6 +26,7 @@ document.body.addEventListener("mouseup", stopDraw);
       parentDiv.appendChild(row);
     }
   }
+
 
   makeGrid(20, 20, "rowPixel", "colpixel", "25px", ppMom);
   makeGrid(3, 6, "paletteRow", "palettePix", "40px", paletteMom);
@@ -62,6 +61,8 @@ for (var i = 0; i < canvasCell.length; i++) {
   canvasCell[i].addEventListener("click", clickColor);
   canvasCell[i].addEventListener("mouseover", paintColor);
 }
+ppMom.addEventListener("mousedown", drawMe);
+document.body.addEventListener("mouseup", stopDraw);
 
 function paintColor(){
   if (isDrawing){
