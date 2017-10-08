@@ -11,7 +11,10 @@
   justify-content: center;
   background-color: #FFDEEB;
   height: 70%;
-  width: 90%; }
+  width: 90%;
+  border-style: solid;
+  box-shadow: 3px 3px 10px #6C6C6C;
+}
 
 #words {
   margin-top: 20px;
@@ -32,10 +35,18 @@ a:visited {
   margin-bottom: 2%; }
 
 .nav {
+  color: white;
+  background-color: black;
   font-family: "Quicksand", sans-serif;
-  font-size: 140%; }
+  font-size: 140%;
+  padding: 3px;
+  box-shadow: 3px 3px 10px #6C6C6C;
+}
 
 .nav:hover {
   cursor: pointer;
-  color: #FF0064;
-  transition-duration: .2s; }
+  background-color: #FF0064;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition-duration: .1s; }
