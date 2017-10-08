@@ -11,10 +11,6 @@ const snippets = (function(){
     </div>
   `;
 
-  const blog = `
-  <div> blog me </div>
-  `;
-
   const contact = `
   <div> talk to me </div>
   `;
@@ -23,7 +19,6 @@ const snippets = (function(){
 
     about : about,
     portfolio : portfolio,
-    blog : blog,
     contact : contact,
   };
 

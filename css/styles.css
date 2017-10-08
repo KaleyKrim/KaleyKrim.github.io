@@ -2,7 +2,7 @@
 #header {
   text-align: center;
   font-family: "Quicksand", sans-serif;
-  font-size: 150%; }
+  font-size: 40px; }
 
 #content {
   display: flex;
@@ -11,9 +11,8 @@
   justify-content: center;
   background-color: #FFDEEB;
   height: 70%;
-  width: 90%;
-  border-style: solid;
-  box-shadow: 3px 3px 10px #6C6C6C;
+  width: 100%;
+  font-size: 35px;
 }
 
 #words {
@@ -35,18 +34,25 @@ a:visited {
   margin-bottom: 2%; }
 
 .nav {
-  color: white;
-  background-color: black;
   font-family: "Quicksand", sans-serif;
-  font-size: 140%;
-  padding: 3px;
-  box-shadow: 3px 3px 10px #6C6C6C;
+  font-size: 40px;
 }
 
 .nav:hover {
   cursor: pointer;
-  background-color: #FF0064;
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
-  transition-duration: .1s; }
+ }
+
+@media screen and (min-width: 600px){
+  .nav{
+    font-size: 25px;
+  }
+  #content{
+    font-size: 20px;
+  }
+  .nav:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition-duration: .1s;
+  }
+}
