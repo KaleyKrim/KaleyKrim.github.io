@@ -1,18 +1,35 @@
-@import url("https://fonts.googleapis.com/css?family=Quicksand|Roboto");
 #header {
   text-align: center;
-  font-family: "Quicksand", sans-serif;
+  font-family: arial;
   font-size: 40px; }
 
 #content {
   display: flex;
-  font-family: "Roboto", sans-serif;
+  font-family: arial;
   margin: auto;
   justify-content: center;
-  background-color: #FFDEEB;
   height: 70%;
   width: 100%;
   font-size: 35px;
+}
+
+#subHeader{
+  font-size: 30px;
+}
+
+.portfolio{
+  border-style: solid;
+  border-color: #FF0064;
+  padding: 5%;
+  width: 25%;
+  color: white;
+  background-color: #FF0064;
+  text-align: center;
+}
+
+.portfolio:hover{
+  color: #FF0064;
+  background-color: white;
 }
 
 #words {
@@ -34,7 +51,7 @@ a:visited {
   margin-bottom: 2%; }
 
 .nav {
-  font-family: "Quicksand", sans-serif;
+  font-family: arial;
   font-size: 40px;
 }
 
@@ -42,12 +59,17 @@ a:visited {
   cursor: pointer;
  }
 
+ .link{
+  font-size: 40px;
+ }
+
+
 @media screen and (min-width: 600px){
   .nav{
-    font-size: 25px;
+    font-size: 30px;
   }
   #content{
-    font-size: 20px;
+    font-size: 25px;
   }
   .nav:hover{
     -webkit-transform: scale(1.2);
