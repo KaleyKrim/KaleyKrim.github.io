@@ -18,6 +18,7 @@
 }
 
 .portfolio{
+  display: inline-block;
   border-style: solid;
   border-color: #FF0064;
   padding: 5%;
@@ -30,6 +31,10 @@
 .portfolio:hover{
   color: #FF0064;
   background-color: white;
+}
+
+h2{
+  font-size: 40px;
 }
 
 #words {

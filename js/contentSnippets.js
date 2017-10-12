@@ -16,12 +16,8 @@ const snippets = (function(){
     </div>
     <a href = "./pixelPainter.html">
       <div class = "portfolio">
-        <div class = "link">
-          Pixel Painter!
-        </div>
-        <div class = "portfolio_description">
-          A simple painting app.
-        </div>
+        <h2>Pixel Painter!</h2>
+        <p>A simple painting app.</p>
       </div>
     </a>
 
