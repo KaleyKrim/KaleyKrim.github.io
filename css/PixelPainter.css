@@ -3,19 +3,10 @@
   box-sizing:border-box;
 }
 
-
 h1{
-  background-color: black;
-  color: white;
-  text-align: center;
+  color: black;
   font-family: 'Pacifico', cursive;
-  font-size: 60px;
-  border-radius: 50px;
-}
-
-h1:hover{
-  background-color: #ff0066;
-  transition-duration: 1s;
+  font-size: 50px;
 }
 
 .colpixel{
@@ -23,16 +14,8 @@ h1:hover{
   background-color: white;
   height: 20px;
   width: 20px;
-}
-
-.stampPic{
-  background-color: red;
-}
-
-.colpixel {
   border: 1px solid;
   border-color: black;
-
 }
 
 .paletteRow{
@@ -51,17 +34,9 @@ h1:hover{
   width: 30px;
 }
 
-.palettePix:hover{
-  transform: scale(1.2);
-}
-
 .tools{
   display: inline-block;
-  box-sizing: border-box;
-  position: relative;
   text-align: center;
- /* padding-top: 15%;
-  margin-left: 25%;*/
   font-size: 20px;
   cursor:pointer;
   color: white;
@@ -70,11 +45,6 @@ h1:hover{
   border-radius: 15px;
   height: 40px;
   width: 60px;
-}
-
-
-.tools:hover{
-  background-color:  #ff0066;
 }
 
 #palette{
@@ -86,4 +56,24 @@ h1:hover{
   display: inline-block;
   margin-left: 100px;
   box-shadow: 4px;
+}
+
+@media (min-width: 600px){
+  .colPixel{
+    height: 35px;
+    width: 35px;
+  }
+
+  .tools:hover{
+    background-color:  #ff0066;
+  }
+
+  .palettePix:hover{
+    transform: scale(1.2);
+  }
+
+  h1:hover{
+    color: #ff0066;
+    transition-duration: 1s;
+  }
 }
