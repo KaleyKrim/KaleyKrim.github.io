@@ -1,14 +1,10 @@
 .rowpixel{
-
-  float: right;
-  display:inline;
+  display:inline-block;
   box-sizing:border-box;
-
 }
 
 
 h1{
-  margin-right: 54%;
   background-color: black;
   color: white;
   text-align: center;
@@ -25,6 +21,8 @@ h1:hover{
 .colpixel{
   box-sizing:border-box;
   background-color: white;
+  height: 20px;
+  width: 20px;
 }
 
 .stampPic{
@@ -49,6 +47,8 @@ h1:hover{
   border-color: black;
   border-radius: 15px;
   cursor:pointer;
+  height: 30px;
+  width: 30px;
 }
 
 .palettePix:hover{
@@ -60,15 +60,16 @@ h1:hover{
   box-sizing: border-box;
   position: relative;
   text-align: center;
-  padding-top: 15%;
-  margin-left: 25%;
+ /* padding-top: 15%;
+  margin-left: 25%;*/
   font-size: 20px;
-  justify-content: center;
   cursor:pointer;
   color: white;
   font-family: 'Quicksand', sans-serif;
   background-color: black;
   border-radius: 15px;
+  height: 40px;
+  width: 60px;
 }
 
 
@@ -79,11 +80,10 @@ h1:hover{
 #palette{
   display: inline-block;
   position: absolute;
-  margin-right: 50%;
 }
 
 #pixelPainter{
   display: inline-block;
-  margin-left: 130px;
+  margin-left: 100px;
   box-shadow: 4px;
 }

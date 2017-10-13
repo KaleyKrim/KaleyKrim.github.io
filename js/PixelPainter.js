@@ -12,24 +12,22 @@ var pixelPainter = (function(){
   var isDrawing = false;
   var savedPicture = [];
 
-  function makeGrid(rows, columns, rowClass, colClass, cellHeight, parentDiv){
+  function makeGrid(rows, columns, rowClass, colClass, parentDiv){
     for (var x=0; x<rows; x++){
       var row = document.createElement("div");
       row.className = rowClass;
       for (var y=0; y<columns; y++){
         var col = document.createElement("div");
         col.className = colClass;
-        col.style.height = cellHeight;
-        col.style.width = cellHeight;
         row.appendChild(col);
       }
       parentDiv.appendChild(row);
     }
   }
 
-  makeGrid(20, 20, "rowPixel", "colpixel", "25px", canvasParent);
-  makeGrid(3, 6, "paletteRow", "palettePix", "40px", sidebarParent);
-  makeGrid(4, 1, "toolTable", "tools", "60px", sidebarParent);
+  makeGrid(10, 10, "rowPixel", "colpixel", canvasParent);
+  makeGrid(3, 6, "paletteRow", "palettePix", sidebarParent);
+  makeGrid(4, 1, "toolTable", "tools", sidebarParent);
 
   (function fillColorPalette(arr){
     for (var i = 0; i < arr.length; i++) {
