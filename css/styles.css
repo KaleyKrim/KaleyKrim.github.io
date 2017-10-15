@@ -2,6 +2,10 @@ body {
   font-size: 16px;
 }
 
+.textBlock{
+  font-size: 130%;
+}
+
 #header {
   text-align: center;
   font-family: arial;

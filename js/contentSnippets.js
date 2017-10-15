@@ -5,7 +5,7 @@ const snippets = (function(){
     <div id = "subHeader">
       <h1>About me:</h1>
     </div>
-    <div id = "aboutMe">
+    <div class = "textBlock">
       I like gummies.
     </div>
   `;
@@ -27,7 +27,7 @@ const snippets = (function(){
   <div id = "subHeader">
       <h1>Contact me:</h1>
   </div>
-  <div id = "contactMe">
+  <div class = "textBlock">
   Just kidding, don't! :)
   </div>
   `;
