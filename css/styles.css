@@ -1,7 +1,11 @@
+body {
+  font-size: 16px;
+}
+
 #header {
   text-align: center;
   font-family: arial;
-  font-size: 30px; }
+  font-size: 200%; }
 
 #content {
   display: flex;
@@ -10,11 +14,10 @@
   justify-content: center;
   height: 70%;
   width: 100%;
-  font-size: 25px;
 }
 
 #subHeader{
-  font-size: 20px;
+  font-size: 130%;
 }
 
 .portfolio{
@@ -31,10 +34,6 @@
 .portfolio:hover{
   color: #FF0064;
   background-color: white;
-}
-
-h2{
-  font-size: 25px;
 }
 
 #words {
@@ -56,17 +55,13 @@ a:visited {
 
 .nav {
   font-family: arial;
-  font-size: 20px;
+  font-size: 135%;
   margin-left: 2%;
   margin-right: 2%;
 }
 
 .nav:hover {
   cursor: pointer;
- }
-
- .link{
-  font-size: 40px;
  }
 
 
