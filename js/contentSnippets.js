@@ -2,16 +2,18 @@ const snippets = (function(){
 
 
   const about = `
-    <div id = "subHeader">
+    <div id = "sub-header">
       <h1>About me:</h1>
     </div>
-    <div class = "textBlock">
-      I like gummies.
+    <div class = "text-block">
+      <div class="tape"></div>
+      I'm a full stack JavaScript web developer.
+      <br>
     </div>
   `;
 
   const portfolio = `
-    <div id = "subHeader">
+    <div id = "sub-header">
       <h1>Things I've made:</h1>
     </div>
     <a href = "./pixelPainter.html">
@@ -24,11 +26,19 @@ const snippets = (function(){
   `;
 
   const contact = `
-  <div id = "subHeader">
+  <div id = "sub-header">
       <h1>Contact me:</h1>
   </div>
-  <div class = "textBlock">
-  Just kidding, don't! :)
+  <div class = "text-block">
+  <div class="tape"></div>
+  <ul>
+    <li>
+      LinkedIn: <a href="https://linkedin.com/in/kaleykriminger/">linkedin.com/in/kaleykriminger/</a>
+    </li>
+    <li>
+      Github: <a href="https://github.com/KaleyKrim">https://github.com/KaleyKrim</a>
+    </li>
+  </ul>
   </div>
   `;
 
