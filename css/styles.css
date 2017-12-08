@@ -26,7 +26,7 @@ body {
 
 #title{
   margin-top: -50px;
-  color: #666666;
+  color: #FF0064;
 }
 
 #sub-header{
@@ -122,6 +122,7 @@ a:visited {
 }
 
 .nav{
+  color: #666666;
   display: flex;
   justify-content: center;
 }
@@ -132,7 +133,7 @@ a:visited {
 
 @media (min-width: 600px){
   .nav:hover{
-    color: #e03433;
+    color: #FF0064;
     transition-duration: .1s;
   }
 }

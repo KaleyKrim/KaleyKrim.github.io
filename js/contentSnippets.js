@@ -3,7 +3,7 @@ const snippets = (function(){
 
   const about = `
     <div id = "sub-header">
-      <h1>About me:</h1>
+      <h1>About Kaley</h1>
     </div>
     <div class = "text-block">
       <div class="tape"></div>
@@ -14,7 +14,7 @@ const snippets = (function(){
 
   const portfolio = `
     <div id = "sub-header">
-      <h1>Things I've made:</h1>
+      <h1>Things I've Made</h1>
     </div>
     <a href = "./pixelPainter.html">
       <div class = "portfolio">
@@ -27,7 +27,7 @@ const snippets = (function(){
 
   const contact = `
   <div id = "sub-header">
-      <h1>Contact me:</h1>
+      <h1>Contact Me</h1>
   </div>
   <div class = "text-block">
   <div class="tape"></div>
