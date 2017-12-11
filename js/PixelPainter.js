@@ -1,3 +1,7 @@
+function goBack() {
+    window.history.back();
+}
+
 var pixelPainter = (function(){
 
   var canvasParent = document.getElementById("pixelPainter");
