@@ -10,8 +10,9 @@ body {
 }
 
 .headerz{
-  height: 200px;
+  height: 250px;
   width: 100%;
+  flex: 1 0 auto;
 }
 
 .sub-title{
@@ -20,7 +21,7 @@ body {
 }
 
 .main{
-  flex: 1 0 auto;
+  flex: 2 0 auto;
 }
 
 #footer{
@@ -103,14 +104,11 @@ body {
 #palette{
   display: inline-block;
   position: absolute;
-  margin-top: 5%;
 }
 
 #pixelPainter{
-  display: inline-block;
   margin-left: 100px;
   box-shadow: 4px;
-  margin-top: 5%;
 }
 
 .text {
