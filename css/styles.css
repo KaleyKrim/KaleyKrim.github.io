@@ -4,8 +4,13 @@ body {
   height: 100%;
   width: 100%;
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
+.main{
+  flex: 1 0 auto;
+}
 
 .header {
   padding: 10px 16px;
@@ -70,6 +75,14 @@ body {
   font-size: 130%;
 }
 
+#footer{
+  color: white;
+  text-align: center;
+  margin: auto;
+  background-color: black;
+  width: 100%;
+}
+
 #github{
   height: 45px;
   width: 45px;
@@ -77,10 +90,6 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-}
-
-.bio-content{
-  display: flex;
 }
 
 #linkedin{
@@ -92,9 +101,8 @@ body {
   background-position: center center;
 }
 
-#contact{
+.bio-content{
   display: flex;
-  justify-content: center;
 }
 
 #sub-header{
@@ -104,9 +112,9 @@ body {
   font-size: 130%;
 }
 
-#footer{
-  text-align: center;
-  margin: auto;
+#contact{
+  display: flex;
+  justify-content: center;
 }
 
 #space{
@@ -145,7 +153,6 @@ body {
 }
 
 #words {
-  margin-top: 20px;
   width: 100%;
 }
 
