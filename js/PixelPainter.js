@@ -1,4 +1,5 @@
 function goBack() {
+    alert("Hm. Fine. That's fine. I never said you had to stay.");
     window.history.back();
 }
 
