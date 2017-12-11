@@ -26,15 +26,9 @@ body {
 }
 
 #name {
-  font-size: 120%;
+  font-size: 100%;
   color: white;
   position: fixed;
-}
-
-#title{
-  position: fixed;
-  color: white;
-  margin-top: 15%;
 }
 
 #navigation {
@@ -71,34 +65,11 @@ body {
   padding-top: 102px;
 }
 
-.textBlock{
-  font-size: 130%;
-}
-
-#footer{
-  color: white;
-  text-align: center;
-  margin: auto;
-  background-color: black;
+.bio-block{
   width: 100%;
-}
-
-#github{
-  height: 45px;
-  width: 45px;
-  background-image: url("../assets/github.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-#linkedin{
-  height: 50px;
-  width: 50px;
-  background-image: url("../assets/linkedin.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
+  border: 1px solid black;
+  box-shadow: 3px 3px 3px grey;
+  background-color: white;
 }
 
 .bio-content{
@@ -156,11 +127,30 @@ body {
   width: 100%;
 }
 
-.bio-block{
+#footer{
+  color: white;
+  text-align: center;
+  margin: auto;
+  background-color: black;
   width: 100%;
-  border: 1px solid black;
-  box-shadow: 3px 3px 3px grey;
-  background-color: white;
+}
+
+#github{
+  height: 45px;
+  width: 45px;
+  background-image: url("../assets/github.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#linkedin{
+  height: 50px;
+  width: 50px;
+  background-image: url("../assets/linkedin.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 a {
@@ -169,6 +159,16 @@ a {
 
 a:visited {
   color: #FF0064; }
+
+@media (min-width: 400px){
+  #name{
+    font-size: 120%;
+  }
+
+  #title{
+    display: block;
+  }
+}
 
 @media (min-width: 900px){
   #name {
