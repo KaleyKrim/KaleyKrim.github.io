@@ -3,41 +3,110 @@ body {
   font-size: 16px;
   height: 100%;
   width: 100%;
+  margin: 0;
+}
+
+
+.header {
+  padding: 10px 16px;
+  background-color: black;
+  height: 110px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#header-text{
+  text-align: left;
+}
+
+#name {
+  font-size: 120%;
+  color: white;
+  position: fixed;
+}
+
+#title{
+  position: fixed;
+  color: white;
+  margin-top: 15%;
+}
+
+#navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-right: 20%;
+  width: 275px;
+}
+
+.nav{
+  font-size: 110%;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.nav:hover {
+  cursor: pointer;
+ }
+
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
 }
 
 .textBlock{
   font-size: 130%;
 }
 
-#top{
+#github{
+  height: 45px;
+  width: 45px;
+  background-image: url("../assets/github.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.bio-content{
+  display: flex;
+}
+
+#linkedin{
+  height: 50px;
+  width: 50px;
+  background-image: url("../assets/linkedin.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#contact{
   display: flex;
   justify-content: center;
-}
-
-#header {
-  height: 200px;
-  width: 50%;
-  text-align: center;
-}
-
-#name {
-  font-size: 450%;
-}
-
-#title{
-  margin-top: -50px;
-  color: #FF0064;
 }
 
 #sub-header{
   width: 100%;
   display: flex;
   justify-content: center;
+  font-size: 130%;
 }
 
 #footer{
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  margin: auto;
 }
 
 #space{
@@ -47,36 +116,16 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  margin-top: -30px;
-}
-
-.tape{
-  height: 60px;
-  width: 110%;
-  background-image: url("../assets/fishtape1.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  margin-top: -30px;
-  margin-left: -10px;
 }
 
 
-#content {
+.content {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   margin: auto;
-  height: 100%;
   width: 70%;
-  background-image: url("../assets/ByQJs.png");
-  background-repeat: repeat;
-  background-position: top left;
-
-}
-
-#sub-header{
-  font-size: 130%;
+  border-style: 1px solid #ff424b;
 }
 
 .portfolio{
@@ -100,10 +149,10 @@ body {
   width: 100%;
 }
 
-.text-block{
-  height: 300px;
-  width: 300px;
+.bio-block{
+  width: 100%;
   border: 1px solid black;
+  box-shadow: 3px 3px 3px grey;
   background-color: white;
 }
 
@@ -114,26 +163,12 @@ a {
 a:visited {
   color: #FF0064; }
 
-#navigation {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 5%;
-  justify-content: space-around;
-}
-
-.nav{
-  color: #666666;
-  display: flex;
-  justify-content: center;
-}
-
-.nav:hover {
-  cursor: pointer;
- }
-
 @media (min-width: 600px){
+  #name {
+    font-size: 200%;
+  }
   .nav:hover{
     color: #FF0064;
-    transition-duration: .1s;
+    transition-duration: .3s;
   }
 }

@@ -14,6 +14,19 @@ portfolioButton.addEventListener('click', ()=>{
   contentDiv.innerHTML = snippets.portfolio;
 });
 
-contactButton.addEventListener('click', ()=>{
-  contentDiv.innerHTML = snippets.contact;
-});
+// contactButton.addEventListener('click', ()=>{
+//   contentDiv.innerHTML = snippets.contact;
+// });
+
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
