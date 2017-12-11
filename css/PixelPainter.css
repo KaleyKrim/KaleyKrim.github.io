@@ -1,56 +1,28 @@
 body {
-/*  font-family: 'Nunito Sans', sans-serif;
-  font-size: 16px;*/
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
   height: 100%;
   width: 100%;
   margin: 0;
   display: flex;
   flex-direction: column;
-}
-
-.main{
-  flex: 1 0 auto;
-}
-
-.header {
-  font-family: 'VT323', monospace;
-  padding: 10px 16px;
   background-color: black;
-  height: 110px;
+}
+
+.headerz{
+  height: 200px;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
 }
 
-#header-text{
-  text-align: left;
-}
-
-#name {
-  font-size: 220%;
+.sub-title{
   color: white;
-  position: fixed;
-}
-
-.content {
-  padding: 16px;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 102px;
+  text-align: center;
 }
 
 #footer{
   color: white;
   text-align: center;
   margin: auto;
-  background-color: black;
   width: 100%;
 }
 
@@ -133,6 +105,46 @@ body {
   display: inline-block;
   margin-left: 100px;
   box-shadow: 4px;
+}
+
+.text {
+  fill: none;
+  stroke-width: 1;
+  stroke-linejoin: round;
+  stroke-dasharray: 70 330;
+  stroke-dashoffset: 0;
+  animation: stroke 6s infinite linear;
+}
+
+.text:nth-child(5n + 1) {
+  stroke: #F2385A;
+  animation-delay: -1.2s;
+}
+
+.text:nth-child(5n + 2) {
+  stroke: #F5A503;
+  animation-delay: -2.4s;
+}
+
+.text:nth-child(5n + 3) {
+  stroke: #FF1E40;
+  animation-delay: -3.6s;
+}
+
+.text:nth-child(5n + 4) {
+  stroke: #4DDDF3;
+  animation-delay: -4.8s;
+}
+
+.text:nth-child(5n + 5) {
+  stroke: #A8FF51;
+  animation-delay: -6s;
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
 }
 
 @media (min-width: 600px){
