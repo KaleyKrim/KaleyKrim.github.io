@@ -8,8 +8,16 @@ body {
   flex-direction: column;
 }
 
+.pink{
+  color: #FF0064;
+}
+
 .main{
   flex: 1 0 auto;
+}
+
+.home{
+  text-align: center;
 }
 
 .header {
@@ -35,8 +43,8 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 100px;
-  margin-right: 20%;
-  width: 275px;
+  margin-right: 10%;
+  width: 330px;
 }
 
 .nav{
