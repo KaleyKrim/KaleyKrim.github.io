@@ -170,10 +170,27 @@ a {
 a:visited {
   color: #FF0064; }
 
-@media (min-width: 600px){
+@media (min-width: 900px){
   #name {
     font-size: 200%;
   }
+
+  #linkedin{
+    opacity: .7;
+  }
+
+  #github{
+    opacity: .7;
+  }
+
+  #linkedin:hover{
+    opacity: 1.0;
+  }
+
+  #github:hover{
+    opacity: 1.0;
+  }
+
   .nav:hover{
     color: #FF0064;
     transition-duration: .3s;

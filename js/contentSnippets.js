@@ -21,12 +21,14 @@ const snippets = (function(){
     <div id = "sub-header">
       <h1>Projects</h1>
     </div>
-    <a href = "./pixelPainter.html">
-      <div class = "portfolio">
-        <h2>Pixel Painter!</h2>
-        <p>A simple painting app.</p>
-      </div>
-    </a>
+    <div class = "bio-block">
+      <a href = "./pixelPainter.html">
+        <div class = "portfolio">
+          <h2>Pixel Painter!</h2>
+          <p>A simple painting app.</p>
+        </div>
+      </a>
+    </div>
 
   `;
 
