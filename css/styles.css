@@ -107,11 +107,6 @@ height: 30px;
   font-size: 130%;
 }
 
-#contact{
-  display: flex;
-  justify-content: center;
-}
-
 #space{
   height: 70px;
   width: 100%;
@@ -152,11 +147,19 @@ height: 30px;
 }
 
 #footer{
+  height: 100px;
   color: white;
   text-align: center;
-  margin: auto;
   background-color: black;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#contact{
+  display: flex;
+  justify-content: center;
 }
 
 #github{
