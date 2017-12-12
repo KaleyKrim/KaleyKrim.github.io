@@ -42,7 +42,7 @@ body {
 #navigation {
   display: flex;
   justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 90px;
   margin-right: 10%;
   width: 330px;
 }
@@ -52,6 +52,22 @@ body {
   color: white;
   display: flex;
   justify-content: center;
+}
+
+#home{
+height: 30px;
+}
+
+#about{
+height: 30px;
+}
+
+#portfolio{
+height: 30px;
+}
+
+#contact{
+  height: 30px;
 }
 
 .nav:hover {
