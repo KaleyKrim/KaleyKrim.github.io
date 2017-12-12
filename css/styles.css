@@ -94,6 +94,9 @@ height: 30px;
   border: 1px solid black;
   box-shadow: 3px 3px 3px grey;
   background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .bio-content{
@@ -132,6 +135,7 @@ height: 30px;
   border-color: #FF0064;
   padding: 5%;
   width: 250px;
+  height: 250px;
   color: white;
   background-color: #FF0064;
   text-align: center;

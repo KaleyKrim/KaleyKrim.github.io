@@ -41,8 +41,28 @@ const snippets = (function(){
     <div class = "bio-block">
       <a href = "./pixelPainter.html">
         <div class = "portfolio">
-          <h2>Pixel Painter!</h2>
-          <p>A simple painting app.</p>
+          <h2>❤︎Paint Time♪</h2>
+          <p>
+            What time is it?
+            <br>
+            Paint time!
+            <br>
+            <br>
+            My first JavaScript project ever; built to practice manipulating the DOM.
+            <br>
+          </p>
+        </div>
+      </a>
+      <a href = "https://github.com/KaleyKrim/angular-message-board">
+        <div class = "portfolio">
+          <h2>Angular Message Board</h2>
+          <p>
+            A multi-user message board.
+            <br>
+            <br>
+            Built with Node.js, Express.js, Sequelize, PostgreSQL, and AngularJS.
+            <br>
+          </p>
         </div>
       </a>
     </div>
