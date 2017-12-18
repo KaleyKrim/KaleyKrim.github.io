@@ -11,9 +11,6 @@ const snippets = (function(){
       Right now my favorite tools are <span class="pink">Node.js</span>, <span class="pink">PostgreSQL</span>, and <span class="pink">React.js</span>.
       <br>
       <br>
-      I'm especially interested in socket programming, and I'm currently developing a super-secret cat-themed multiplayer browser game using Socket.IO.
-      <br>
-      <br>
       Feel free to check out my portfolio page, or click the GitHub logo in the footer if you're interested in perusing my code!
     </div>
   `;
