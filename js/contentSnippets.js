@@ -48,8 +48,8 @@ const snippets = (function(){
             </a>
           </li>
           <li>
-            <a href="#" class="animated flipInX">
-              <img src="http://placehold.it/200x200/3498db/FFFFFF" alt="img01"/>
+            <a href="https://github.com/KaleyKrim/react-product-marketplace-cms" class="animated flipInX">
+              <img src="../assets/cmsthumb.png" alt="A product marketplace CMS"/>
             </a>
           </li>
           <li>
