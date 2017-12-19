@@ -35,34 +35,31 @@ const snippets = (function(){
     <div id = "sub-header">
       <h1>Projects</h1>
     </div>
-    <div class = "bio-block">
-      <a href = "./pixelPainter.html">
-        <div class = "portfolio">
-          <h2>❤︎Paint Time♪</h2>
-          <p>
-            What time is it?
-            <br>
-            Paint time!
-            <br>
-            <br>
-            My first JavaScript project ever; built to practice manipulating the DOM.
-            <br>
-          </p>
-        </div>
-      </a>
-      <a href = "https://github.com/KaleyKrim/angular-message-board">
-        <div class = "portfolio">
-          <h2>Angular Message Board</h2>
-          <p>
-            A multi-user message board.
-            <br>
-            <br>
-            Built with Node.js, Express.js, Sequelize, PostgreSQL, and AngularJS.
-            <br>
-          </p>
-        </div>
-      </a>
-    </div>
+    <div id="portfolio">
+  <ul class="portfolio-grid">
+          <li>
+            <a href="https://github.com/KaleyKrim/Shadee" class="animated flipInX">
+              <img src="../assets/shadethumb.png" alt="Shade, a social video platform for iOS"/>
+            </a>
+          </li>
+          <li>
+            <a href="http://kaleykriminger.com/pixelPainter.html" class="animated flipInX">
+              <img src="../assets/pixelpainterthumb.png" alt="Paint Time, a javascript paint app"/>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="animated flipInX">
+              <img src="http://placehold.it/200x200/3498db/FFFFFF" alt="img01"/>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="animated flipInX">
+              <img src="http://placehold.it/200x200/9b59b6/FFFFFF" alt="img01"/>
+            </a>
+          </li>
+        </ul>
+
+</div>
 
   `;
 
