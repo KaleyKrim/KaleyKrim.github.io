@@ -53,8 +53,8 @@ const snippets = (function(){
             </a>
           </li>
           <li>
-            <a href="#" class="animated flipInX">
-              <img src="http://placehold.it/200x200/9b59b6/FFFFFF" alt="img01"/>
+            <a href="https://github.com/KaleyKrim/express-gallery" class="animated flipInX">
+              <img src="../assets/gallerythumb.png" alt="img01"/>
             </a>
           </li>
         </ul>
@@ -68,14 +68,14 @@ const snippets = (function(){
       <h1>Contact Me</h1>
   </div>
   <div class = "bio-block">
-  <ul>
-    <li>
-      LinkedIn: <a href="https://linkedin.com/in/kaleykriminger/">linkedin.com/in/kaleykriminger/</a>
-    </li>
-    <li>
-      Github: <a href="https://github.com/KaleyKrim">https://github.com/KaleyKrim</a>
-    </li>
-  </ul>
+    <ul>
+      <li>
+        LinkedIn: <a href="https://linkedin.com/in/kaleykriminger/">linkedin.com/in/kaleykriminger/</a>
+      </li>
+      <li>
+        Github: <a href="https://github.com/KaleyKrim">https://github.com/KaleyKrim</a>
+      </li>
+    </ul>
   </div>
   `;
 
