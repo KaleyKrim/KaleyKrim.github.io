@@ -3,36 +3,40 @@ function goBack() {
     window.history.back();
 }
 
+const heading = document.querySelector('h1');
+
+heading.addEventListener('mouseover',()=> {
+  document.body.style.animationPlayState = 'running';
+});
+heading.addEventListener('mouseout',()=> {
+  document.body.style.animationPlayState = 'paused';
+});
+
 var pixelPainter = (function(){
 
-  var canvasParent = document.getElementById("pixelPainter");
+  var canvasParent = document.getElementById("pixel-painter");
   var sidebarParent = document.getElementById("palette");
 
   var toolTable = document.getElementsByClassName("tools");
-  var colorSwatches = document.getElementsByClassName("palettePix");
-  var canvasCells = document.getElementsByClassName("colpixel");
+  var colorSwatches = document.getElementsByClassName("palette-pixel");
+  var canvasCells = document.getElementsByClassName("canvas-pixel");
 
-  var colorArray = ["#ffffff", "#99ddff", "#df80ff", "#ffccdd", "#ffff99", "#b3ffd9", "#a6a6a6", "#1a75ff", "#cc00cc", "#ff0000", "#ffd11a", "#4dff4d", "#000000", "#000066", "#4d004d", "#800000", "#ff471a", "#009900"];
+  var colorArray = ["#ffffff", "#FF6AD5", "#C774E8", "#AD8CFF", "#8795E8", "#94D0FF", "#FFD0DE", "#FF3DD1", "#EA40AA", "#C0FBE7", "#57CDBA", "#77FED5", "#000000", "#F5D400", "#32006C", "#AF00FF", "#00F3FF", "#2C00FF"];
   var currentColor = colorArray[0];
   var isDrawing = false;
   var savedPicture = [];
 
-  function makeGrid(rows, columns, rowClass, colClass, parentDiv){
-    for (var x=0; x<rows; x++){
+  function makeGrid(boxes, className, parentDiv){
+    for (var x=0; x<boxes; x++){
       var row = document.createElement("div");
-      row.className = rowClass;
-      for (var y=0; y<columns; y++){
-        var col = document.createElement("div");
-        col.className = colClass;
-        row.appendChild(col);
-      }
+      row.className = className;
       parentDiv.appendChild(row);
     }
   }
 
-  makeGrid(10, 10, "rowPixel", "colpixel", canvasParent);
-  makeGrid(3, 6, "paletteRow", "palettePix", sidebarParent);
-  makeGrid(4, 1, "toolTable", "tools", sidebarParent);
+  makeGrid(625, "canvas-pixel", canvasParent);
+  makeGrid(18, "palette-pixel", sidebarParent);
+  makeGrid(4, "tools", sidebarParent);
 
   (function fillColorPalette(arr){
     for (var i = 0; i < arr.length; i++) {
@@ -46,10 +50,10 @@ var pixelPainter = (function(){
     }
   }());
 
-  toolTable[0].innerHTML = "Erase";
-  toolTable[1].innerHTML = "Clear";
-  toolTable[2].innerHTML = "Save";
-  toolTable[3].innerHTML = "Load";
+  toolTable[0].innerHTML = "E R A S E";
+  toolTable[1].innerHTML = "C L E A R";
+  toolTable[2].innerHTML = "S A V E";
+  toolTable[3].innerHTML = "L O A D";
   toolTable[0].addEventListener("click", eraseColor);
   toolTable[1].addEventListener("click", clearCanvas);
   toolTable[2].addEventListener("click", savePic);

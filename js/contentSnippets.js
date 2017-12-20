@@ -70,6 +70,18 @@ const snippets = (function(){
   <div class = "bio-block">
     <ul>
       <li>
+        <form action="mailto:kaley.kriminger@gmail.com" method="post" enctype="text/plain">
+          Name:<br>
+          <input type="text" name="name"><br>
+          E-mail:<br>
+          <input type="text" name="mail"><br>
+          Comment:<br>
+          <input type="text" name="comment" size="50"><br><br>
+          <input type="submit" value="Send">
+          <input type="reset" value="Reset">
+        </form>
+      </li>
+      <li>
         LinkedIn: <a href="https://linkedin.com/in/kaleykriminger/">linkedin.com/in/kaleykriminger/</a>
       </li>
       <li>
