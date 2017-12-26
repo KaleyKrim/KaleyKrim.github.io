@@ -37,6 +37,10 @@ body{
   align-items: center;
 }
 
+#recommendation div:hover{
+  cursor: pointer;
+}
+
 #recommendation div{
   text-align:center;
   margin: auto;

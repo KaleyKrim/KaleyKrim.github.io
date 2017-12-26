@@ -104,16 +104,9 @@ function getDetails(){
 }
 
 
-function makeRequest(url){
+function makeRequest(url, cb){
   var req = new XMLHttpRequest();
-  req.addEventListener('load', getData);
-  req.open("GET", url);
-  req.send();
-}
-
-function makeSecondRequest(url){
-  var req = new XMLHttpRequest();
-  req.addEventListener('load', getDetails);
+  req.addEventListener('load', cb);
   req.open("GET", url);
   req.send();
 }
@@ -123,7 +116,7 @@ function startAction(){
     recommendation.removeChild(recommendation.firstChild);
   }
   var searchTerms = searchInput.value.toLowerCase().replace(/\ /g,"+");
-  makeRequest(setUrlForSearch(searchTerms));
+  makeRequest(setUrlForSearch(searchTerms), getData);
 }
 
 function showDetails(){
@@ -131,7 +124,7 @@ function showDetails(){
   while (recommendation.firstChild) {
     recommendation.removeChild(recommendation.firstChild);
   }
-  makeSecondRequest(setUrlForDetails(searchID));
+  makeRequest(setUrlForDetails(searchID), getDetails);
 }
 
 searchButton.addEventListener('click', startAction);
