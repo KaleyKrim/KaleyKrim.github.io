@@ -1,11 +1,20 @@
 var notFirstSearch = false;
+
 var searchInput = document.getElementById('search-input');
 var searchButton = document.getElementById('search-button');
 var recommendation = document.getElementById('recommendation');
 
-function setUrl(searchTerms){
-  var url = `http://www.omdbapi.com/?t=${searchTerms}&apikey=a6e776ca`;
+var imdbID = null;
+var searchID = null;
+
+function setUrlForSearch(searchTerms){
+  var url = `http://www.omdbapi.com/?s=${searchTerms}&apikey=a6e776ca`;
   return url;
+}
+
+function setUrlForDetails(imdbID){
+  var detailUrl = `http://www.omdbapi.com/?i=${imdbID}&apikey=a6e776ca`;
+  return detailUrl;
 }
 
 function makeDiv(text, data, moreText, parentDiv){
@@ -15,19 +24,18 @@ function makeDiv(text, data, moreText, parentDiv){
   parentDiv.appendChild(div);
 }
 
-function renderPoster(url, parentDiv){
+function renderPoster(url, height, width, parentDiv, imdbID){
   var div = document.createElement('div');
-  div.style.height = "400px";
-  div.style.width = "300px"
+  div.style.height = height;
+  div.style.width = width;
+  div.className = imdbID;
   div.style.backgroundImage = `url('${url}')`;
+  div.addEventListener('click', showDetails);
   parentDiv.appendChild(div);
 }
 
 function renderRecommendation(obj){
 
-  if(notFirstSearch){
-    recommendation.removeChild(recommendation.childNodes[0]);
-  }
   var judgment = null;
 
   if (obj.average > 80){
@@ -42,7 +50,7 @@ function renderRecommendation(obj){
   recommendation.appendChild(results);
 
   makeDiv('Oh girl, u want to watch', obj.title, '?', results);
-  renderPoster(obj.poster, results);
+  renderPoster(obj.poster, '400px', '300px', results);
   makeDiv(judgment, obj.average, '/100, lol', results);
   notFirstSearch = true;
   searchInput.value = "";
@@ -76,6 +84,21 @@ function makeObject(jsonData){
 
 function getData(){
   var data = JSON.parse(this.responseText);
+  if(data.Search.length === 1){
+    imdbID = data.Search[0].imdbID;
+    poster = data.Search[0].Poster;
+    renderPoster(poster, '400px', '300px', recommendation, imdbID);
+  }else{
+    data.Search.forEach((movie) => {
+      imdbID = movie.imdbID;
+      poster = movie.Poster;
+      renderPoster(poster, '350px', '250px', recommendation, imdbID);
+    })
+  }
+}
+
+function getDetails(){
+  var data = JSON.parse(this.responseText);
   var movieStatObject = makeObject(data);
   renderRecommendation(movieStatObject);
 }
@@ -88,9 +111,27 @@ function makeRequest(url){
   req.send();
 }
 
+function makeSecondRequest(url){
+  var req = new XMLHttpRequest();
+  req.addEventListener('load', getDetails);
+  req.open("GET", url);
+  req.send();
+}
+
 function startAction(){
+  while (recommendation.firstChild) {
+    recommendation.removeChild(recommendation.firstChild);
+  }
   var searchTerms = searchInput.value.toLowerCase().replace(/\ /g,"+");
-  makeRequest(setUrl(searchTerms));
+  makeRequest(setUrlForSearch(searchTerms));
+}
+
+function showDetails(){
+  searchID = this.className;
+  while (recommendation.firstChild) {
+    recommendation.removeChild(recommendation.firstChild);
+  }
+  makeSecondRequest(setUrlForDetails(searchID));
 }
 
 searchButton.addEventListener('click', startAction);
