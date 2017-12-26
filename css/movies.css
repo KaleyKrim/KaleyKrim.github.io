@@ -1,0 +1,54 @@
+body{
+  font-family: arial;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#top{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#content{
+  width: 100%;
+}
+
+#welcome{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#search{
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#recommendation{
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#recommendation div{
+  text-align:center;
+  margin: auto;
+}
+
+#footer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer div{
+  text-align: center;
+}
