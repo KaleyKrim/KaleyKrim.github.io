@@ -8,10 +8,14 @@ const snippets = (function(){
     <div class="home">
       My name's Kaley, and I'm a web developer.
       <br>
-      Right now my favorite tools are <span class="pink">Node.js</span>, <span class="pink">PostgreSQL</span>, and <span class="pink">React.js</span>.
+      <br>
+      Right now my favorite tools for building an app are <span class="pink">Node.js</span>, <span class="pink">ExpressJS</span>, <span class="pink">PostgreSQL</span>, and <span class="pink">React.js</span>.
       <br>
       <br>
-      Feel free to check out my portfolio page, or click the GitHub logo in the footer if you're interested in perusing my code!
+      I also have experience with mobile app development using <span class="pink">React Native</span>.
+      <br>
+      <br>
+      Feel free to check out some of my projects on my portfolio page, or click the GitHub logo in the footer if you're interested in perusing my code!
     </div>
   `;
 
