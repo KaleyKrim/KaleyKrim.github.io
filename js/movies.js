@@ -1,5 +1,3 @@
-var notFirstSearch = false;
-
 var searchInput = document.getElementById('search-input');
 var searchButton = document.getElementById('search-button');
 var recommendation = document.getElementById('recommendation');
@@ -17,10 +15,10 @@ function setUrlForDetails(imdbID){
   return detailUrl;
 }
 
-function makeDiv(text, data, moreText, parentDiv){
+function makeDiv(text, data, parentDiv){
   var div = document.createElement('div');
   div.className = 'recommendation-text';
-  div.innerHTML = text + ' ' + data + moreText;
+  div.innerHTML = text + ' ' + data;
   parentDiv.appendChild(div);
 }
 
@@ -30,6 +28,7 @@ function renderPoster(url, height, width, parentDiv, imdbID){
   div.style.width = width;
   div.className = imdbID;
   div.style.backgroundImage = `url('${url}')`;
+  div.style.backgroundSize = 'cover';
   div.addEventListener('click', showDetails);
   parentDiv.appendChild(div);
 }
@@ -37,21 +36,27 @@ function renderPoster(url, height, width, parentDiv, imdbID){
 function renderRecommendation(obj){
 
   var judgment = null;
+  var appraisal = null;
 
   if (obj.average > 80){
-    judgment = 'Ooh yeah girl, u should watch it. Its average internet rating is'
+    appraisal = 'yes';
+    judgment = `Ooh yeah girl, u <span class=${appraisal}>should</span> watch it. Its average internet rating is`
   }else if (obj.average > 60){
-    judgment = 'I mean, u can, if u want. Its average internet rating is'
+    appraisal = 'maybe';
+    judgment = `I mean, u can, <span class=${appraisal}>if u want</span>. Its average internet rating is`
   }else{
-    judgment = `Oh girl, I wouldn't. Its average internet rating is`;
+    appraisal = 'no';
+    judgment = `Oh girl, I <span class=${appraisal}>wouldn't</span>. Its average internet rating is`;
   }
 
   var results = document.createElement('div');
   recommendation.appendChild(results);
 
-  makeDiv('Oh girl, u want to watch', obj.title, '?', results);
+  let averageScore = `<span class=${appraisal}>${obj.average.toString() + '/100'}</span>`;
+
+  makeDiv('Oh girl, u want to watch', (obj.title + '?'), results);
   renderPoster(obj.poster, '400px', '300px', results);
-  makeDiv(judgment, obj.average, '/100, lol', results);
+  makeDiv(judgment, averageScore, results);
   notFirstSearch = true;
   searchInput.value = "";
 

@@ -1,13 +1,35 @@
 body{
   font-family: arial;
+  font-size: 16px;
   display: flex;
   flex-wrap: wrap;
 }
 
+.yes{
+  color: green;
+}
+
+.no{
+  color: red;
+}
+
+.maybe{
+  color: orange;
+}
+
+#sophocles{
+  height: 250px;
+  width: 152px;
+  background-image: url("../assets/sophocles.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 #top{
-  width: 100%;
+  width: 80%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -20,17 +42,20 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 #search{
-  margin-top: 3%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #recommendation{
+  width: 100%;
   margin-top: 2%;
+  font-size: 130%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -46,9 +71,18 @@ body{
   margin: auto;
 }
 
+input{
+  font-size: 120%;
+}
+
+button{
+  font-size: 120%;
+}
+
 #footer{
   width: 100%;
   display: flex;
+  margin-top: 2%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -56,4 +90,27 @@ body{
 
 #footer div{
   text-align: center;
+}
+
+#github{
+  height: 45px;
+  width: 45px;
+  background-image: url("../assets/github.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#linkedin{
+  height: 50px;
+  width: 50px;
+  background-image: url("../assets/linkedin.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#contact{
+  display: flex;
+  justify-content: center;
 }
