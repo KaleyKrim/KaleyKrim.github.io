@@ -40,10 +40,10 @@ function renderRecommendation(obj){
 
   if (obj.average > 80){
     appraisal = 'yes';
-    judgment = `Ooh yeah girl, u <span class=${appraisal}>should</span> watch it. Its average internet rating is`
+    judgment = `Ooh yeah girl, you <span class=${appraisal}>should</span> watch it. Its average internet rating is`
   }else if (obj.average > 60){
     appraisal = 'maybe';
-    judgment = `I mean, u can, <span class=${appraisal}>if u want</span>. Its average internet rating is`
+    judgment = `I mean, you can, <span class=${appraisal}>if you want</span>. Its average internet rating is`
   }else{
     appraisal = 'no';
     judgment = `Oh girl, I <span class=${appraisal}>wouldn't</span>. Its average internet rating is`;
@@ -54,7 +54,7 @@ function renderRecommendation(obj){
 
   let averageScore = `<span class=${appraisal}>${obj.average.toString() + '/100'}</span>`;
 
-  makeDiv('Oh girl, u want to watch', (obj.title + '?'), results);
+  makeDiv('Oh, you want to watch', (obj.title + '?'), results);
   renderPoster(obj.poster, '400px', '300px', results);
   makeDiv(judgment, averageScore, results);
   notFirstSearch = true;

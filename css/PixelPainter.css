@@ -99,6 +99,7 @@ h1:hover {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
+  opacity: .7;
 }
 
 #linkedin{
@@ -108,6 +109,15 @@ h1:hover {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
+  opacity: .7;
+}
+
+#linkedin:hover{
+  opacity: 1.0;
+}
+
+#github:hover{
+  opacity: 1.0;
 }
 
 .canvas-pixel{

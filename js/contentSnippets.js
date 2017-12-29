@@ -6,32 +6,14 @@ const snippets = (function(){
       <h1>Hello!</h1>
     </div>
     <div class="home">
-      My name's Kaley, and I'm a web developer.
+    <h2>My name's Kaley, and I'm a full-stack developer.</h2>
+      Right now my favorite tools for building apps are <span class="pink">Node.js</span>, <span class="pink">ExpressJS</span>, <span class="pink">PostgreSQL</span>, and <span class="pink">React.js</span> + <span class="pink">Redux</span>. I also have experience with mobile app development using <span class="pink">React Native</span>.
       <br>
       <br>
-      Right now my favorite tools for building an app are <span class="pink">Node.js</span>, <span class="pink">ExpressJS</span>, <span class="pink">PostgreSQL</span>, and <span class="pink">React.js</span>.
+      Before I became a programmer, I worked as an Assistant Language Teacher in a snowy town in Northern Japan, and then as a translator for Japanese games, visual novels, short stories, and news articles. In 2017, I received the Kurodahan Press Translation Prize for my translation of 「とんでるじっちゃん」 (Flying Gramps) by Onuma Tamaki, which won the 2013 ゆきのまち幻想文学賞.
       <br>
       <br>
-      I also have experience with mobile app development using <span class="pink">React Native</span>.
-      <br>
-      <br>
-      Feel free to check out some of my projects on my portfolio page, or click the GitHub logo in the footer if you're interested in perusing my code!
-    </div>
-  `;
-
-  const about = `
-    <div id = "sub-header">
-      <h1>About Me</h1>
-    </div>
-      <div class = "bio-block">
-        <blockquote>
-          I graduated with a BA in East Asian Languages and Literatures from the University of Florida in 2011, and spent the following three years as an assistant language teacher in a snowy town in Northern Japan. After returning to the US, I began my career as a translator, and devoted the next three years to translating Japanese games, visual novels, short stories, and news articles into English.
-          </blockquote>
-            <br>
-            <blockquote>
-          In early 2017, I decided to tear myself away from translation, and made the switch to web development.
-          </blockquote>
-      </div>
+      <h2>Feel free to check out some of my projects on my portfolio page, or click the GitHub logo in the footer if you're interested in perusing my code!</h2>
     </div>
   `;
 
@@ -86,7 +68,6 @@ const snippets = (function(){
   return {
 
     home : home,
-    about : about,
     portfolio : portfolio,
     contact : contact,
   };

@@ -1,16 +1,11 @@
 const contentDiv = document.getElementById('words');
 
 const homeButton = document.getElementById('home');
-const aboutButton = document.getElementById('about');
 const portfolioButton = document.getElementById('portfolio');
 const contactButton = document.getElementById('contact');
 
 homeButton.addEventListener('click', ()=>{
   contentDiv.innerHTML = snippets.home;
-});
-
-aboutButton.addEventListener('click', ()=>{
-  contentDiv.innerHTML = snippets.about;
 });
 
 portfolioButton.addEventListener('click', ()=>{
@@ -22,6 +17,7 @@ contactButton.addEventListener('click', ()=>{
 });
 
 window.onscroll = function() {stickyHeader()};
+
 
 var header = document.getElementById("myHeader");
 var sticky = header.offsetTop;
