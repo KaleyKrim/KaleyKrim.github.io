@@ -1,6 +1,4 @@
 const snippets = (function(){
-
-
   const home = `
     <div id = "sub-header">
       <h1>Hello!</h1>
@@ -22,36 +20,34 @@ const snippets = (function(){
       <h1>Projects</h1>
     </div>
     <div id="portfolio">
-  <ul class="portfolio-grid">
-          <li>
-            <a href="https://github.com/KaleyKrim/Shadee" class="animated flipInX">
-              <img src="../assets/shadethumb.png" alt="Shade, a social video platform for iOS"/>
-            </a>
-          </li>
-          <li>
-            <a href="http://kaleykriminger.com/pixelPainter.html" class="animated flipInX">
-              <img src="../assets/pixelpainterthumb.png" alt="Paint Time, a javascript paint app"/>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/KaleyKrim/react-product-marketplace-cms" class="animated flipInX">
-              <img src="../assets/cmsthumb.png" alt="A product marketplace CMS"/>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/KaleyKrim/express-gallery" class="animated flipInX">
-              <img src="../assets/gallerythumb.png" alt="img01"/>
-            </a>
-          </li>
-        </ul>
-
-</div>
-
+      <ul class="portfolio-grid">
+        <li>
+          <a href="https://github.com/KaleyKrim/Shadee" class="animated flipInX">
+            <img src="../assets/shadethumb.png" alt="Shade, a social video platform for iOS"/>
+          </a>
+        </li>
+        <li>
+          <a href="http://kaleykriminger.com/pixelPainter.html" class="animated flipInX">
+            <img src="../assets/pixelpainterthumb.png" alt="Paint Time, a javascript paint app"/>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/KaleyKrim/react-product-marketplace-cms" class="animated flipInX">
+            <img src="../assets/cmsthumb.png" alt="A product marketplace CMS"/>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/KaleyKrim/express-gallery" class="animated flipInX">
+            <img src="../assets/gallerythumb.png" alt="img01"/>
+          </a>
+        </li>
+      </ul>
+    </div>
   `;
 
   const contact = `
   <div id = "sub-header">
-      <h1>Contact Me</h1>
+    <h1>Contact Me</h1>
   </div>
   <div class = "bio-block">
     <ul>
@@ -66,11 +62,9 @@ const snippets = (function(){
   `;
 
   return {
-
     home : home,
     portfolio : portfolio,
     contact : contact,
   };
-
 
 }());

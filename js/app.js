@@ -1,5 +1,4 @@
 const contentDiv = document.getElementById('words');
-
 const homeButton = document.getElementById('home');
 const portfolioButton = document.getElementById('portfolio');
 const contactButton = document.getElementById('contact');
@@ -17,7 +16,6 @@ contactButton.addEventListener('click', ()=>{
 });
 
 window.onscroll = function() {stickyHeader()};
-
 
 var header = document.getElementById("myHeader");
 var sticky = header.offsetTop;
