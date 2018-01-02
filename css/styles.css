@@ -11,17 +11,6 @@ body {
 .pink{
   font-weight: bold;
 }
-/*
-#kaley{
-  height: 150px;
-  width: 150px;
-  background-image: url("../assets/kaley.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  display: flex;
-  align-self: center;
-}*/
 
 .main{
   flex: 1 0 auto;
@@ -123,7 +112,7 @@ body {
   padding: 3px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .links:hover {
@@ -186,23 +175,34 @@ body {
   justify-content: center;
 }
 
-#github{
-  height: 45px;
-  width: 45px;
+
+#git{
+  height: 23px;
+  width: 23px;
   background-image: url("../assets/github.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-#linkedin{
-  height: 50px;
-  width: 50px;
+#linked{
+  height: 27px;
+  width: 27px;
   background-image: url("../assets/linkedin.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
 }
+
+#mail{
+  height: 20px;
+  width: 20px;
+  background-image: url("../assets/icons/e-mail.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 
 a {
   color: black;

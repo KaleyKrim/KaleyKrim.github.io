@@ -62,25 +62,8 @@ function snippets(){
     </div>
   `;
 
-  const contact = `
-  <div id = "sub-header">
-    <h1>Contact Me</h1>
-  </div>
-  <div class = "bio-block">
-    <ul>
-      <li>
-        LinkedIn: <a href="https://linkedin.com/in/kaleykriminger/">linkedin.com/in/kaleykriminger/</a>
-      </li>
-      <li>
-        Github: <a href="https://github.com/KaleyKrim">https://github.com/KaleyKrim</a>
-      </li>
-    </ul>
-  </div>
-  `;
-
   return {
     home : home,
-    portfolio : portfolio,
-    contact : contact,
+    portfolio : portfolio
   };
 };

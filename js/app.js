@@ -3,6 +3,8 @@ const homeButton = document.getElementById('home');
 const portfolioButton = document.getElementById('portfolio');
 const dropButton = document.getElementById('dropbtn');
 const myDropDown = document.getElementById('myDropdown');
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
 
 var currentPage = null;
 
@@ -28,16 +30,9 @@ dropButton.addEventListener('mouseover', ()=>{
   myDropDown.classList.toggle("show");
 });
 
-myDropDown.addEventListener('mousout', ()=>{
-  myDropDown.classList.toggle("show");
-})
-
 window.onscroll = function() {
   stickyHeader();
 };
-
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
 
 function stickyHeader() {
   if (window.pageYOffset >= sticky) {
