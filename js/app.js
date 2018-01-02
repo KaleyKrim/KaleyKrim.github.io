@@ -1,21 +1,40 @@
-const contentDiv = document.getElementById('words');
+const contentDiv = document.getElementById('content');
 const homeButton = document.getElementById('home');
 const portfolioButton = document.getElementById('portfolio');
-const contactButton = document.getElementById('contact');
+const dropButton = document.getElementById('dropbtn');
+const myDropDown = document.getElementById('myDropdown');
+
+var currentPage = null;
 
 homeButton.addEventListener('click', ()=>{
-  contentDiv.innerHTML = snippets.home;
+  contentDiv.innerHTML = snippets().home;
+  if(currentPage){
+    currentPage.style.border = null;
+  }
+  currentPage = homeButton;
+  homeButton.style.border = '1px solid white';
 });
 
 portfolioButton.addEventListener('click', ()=>{
-  contentDiv.innerHTML = snippets.portfolio;
+  contentDiv.innerHTML = snippets().portfolio;
+  if(currentPage){
+    currentPage.style.border = null;
+  }
+  currentPage = portfolioButton;
+  portfolioButton.style.border = '1px solid white';
 });
 
-contactButton.addEventListener('click', ()=>{
-  contentDiv.innerHTML = snippets.contact;
+dropButton.addEventListener('mouseover', ()=>{
+  myDropDown.classList.toggle("show");
 });
 
-window.onscroll = function() {stickyHeader()};
+myDropDown.addEventListener('mousout', ()=>{
+  myDropDown.classList.toggle("show");
+})
+
+window.onscroll = function() {
+  stickyHeader();
+};
 
 var header = document.getElementById("myHeader");
 var sticky = header.offsetTop;
