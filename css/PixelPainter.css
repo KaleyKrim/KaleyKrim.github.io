@@ -161,6 +161,7 @@ h1:hover {
 
 #pixel-painter{
   box-shadow: 4px;
+  height: 500px;
   width: 500px;
   display: flex;
   flex-wrap: wrap;
