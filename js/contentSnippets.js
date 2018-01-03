@@ -58,6 +58,11 @@ function snippets(){
             <img src="../assets/gallerythumb.png" alt="img01"/>
             </a>
           </li>
+          <li>
+            <a href="https://github.com/KaleyKrim/angular-message-board" class="animated flipInX">
+            <img src="../assets/msgboardthumb.png" alt="img01"/>
+            </a>
+          </li>
         </ul>
     </div>
   `;
