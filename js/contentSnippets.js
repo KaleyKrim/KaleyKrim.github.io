@@ -63,6 +63,11 @@ function snippets(){
             <img src="../assets/msgboardthumb.png" alt="img01"/>
             </a>
           </li>
+          <li>
+            <a href="https://github.com/KaleyKrim/React-Kanban" class="animated flipInX">
+            <img src="../assets/kanbanthumb.png" alt="img01"/>
+            </a>
+          </li>
         </ul>
     </div>
   `;
