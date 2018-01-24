@@ -24,8 +24,8 @@ function snippets(){
     <div id="portfolio">
       <ul class="portfolio-grid">
         <li>
-          <a href="http://kaleykriminger.com/pixelPainter.html" class="animated flipInX">
-            <img src="../assets/pixelpainterthumb.png" alt="Paint Time, a javascript paint app"/>
+          <a href="http://165.227.60.172/" class="animated flipInX">
+            <img src="../assets/pixelpainterthumb.png" alt="Pixel Party, a realtime javascript paint app"/>
           </a>
         </li>
         <li>

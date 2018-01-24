@@ -1,8 +1,3 @@
-function goBack() {
-    alert("Hm. Fine. That's fine. I never said you had to stay.");
-    window.history.back();
-}
-
 const heading = document.querySelector('h1');
 
 heading.addEventListener('mouseover',()=> {
@@ -107,6 +102,7 @@ var pixelPainter = (function(){
     for (var i = 0; i < canvasCells.length; i++){
       savedPicture.push(canvasCells[i].style.backgroundColor);
     }
+
   }
 
   function loadPic(){
