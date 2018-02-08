@@ -35,37 +35,22 @@ function snippets(){
         </li>
       </ul>
       <div id = "sub-header">
-        <h1>Mobile</h1>
-      </div>
-        <ul class="portfolio-grid">
-          <li>
-            <a href="https://github.com/KaleyKrim/Shadee" class="animated flipInX">
-            <img src="../assets/shadethumb.png" alt="Shade, a social video platform for iOS"/>
-            </a>
-          </li>
-        </ul>
-      <div id = "sub-header">
         <h1>Web Apps</h1>
       </div>
         <ul class="portfolio-grid">
           <li>
-            <a href="https://github.com/KaleyKrim/react-product-marketplace-cms" class="animated flipInX">
-            <img src="../assets/cmsthumb.png" alt="A product marketplace CMS"/>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/KaleyKrim/express-gallery" class="animated flipInX">
-            <img src="../assets/gallerythumb.png" alt="img01"/>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/KaleyKrim/angular-message-board" class="animated flipInX">
+            <a href="http://159.89.147.189/" class="animated flipInX">
             <img src="../assets/msgboardthumb.png" alt="img01"/>
             </a>
           </li>
+        </ul>
+      <div id = "sub-header">
+        <h1>Mobile</h1>
+      </div>
+        <ul class="portfolio-grid">
           <li>
-            <a href="https://github.com/KaleyKrim/React-Kanban" class="animated flipInX">
-            <img src="../assets/kanbanthumb.png" alt="img01"/>
+            <a href="https://github.com/cozpon/Shadee" class="animated flipInX">
+            <img src="../assets/shadethumb.png" alt="Shade, a social video platform for iOS"/>
             </a>
           </li>
         </ul>
