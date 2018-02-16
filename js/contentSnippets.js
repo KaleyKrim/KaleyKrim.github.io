@@ -18,6 +18,17 @@ function snippets(){
   `;
 
   const portfolio = `
+  <div id = "sub-header">
+        <h1>Web Apps</h1>
+      </div>
+        <ul class="portfolio-grid">
+          <li>
+            <a href="http://159.89.147.189/" class="animated flipInX">
+            <img src="../assets/msgboardthumb.png" alt="img01"/>
+            </a>
+            <div class="description">A multi user message board SPA built with Node.js, PostgreSQL, & AngularJS.</div>
+          </li>
+        </ul>
     <div id = "sub-header">
       <h1>Just for Fun</h1>
     </div>
@@ -36,17 +47,6 @@ function snippets(){
           <div class="description">A fun movie recommendation app that calls the OMDB API.</div>
         </li>
       </ul>
-      <div id = "sub-header">
-        <h1>Web Apps</h1>
-      </div>
-        <ul class="portfolio-grid">
-          <li>
-            <a href="http://159.89.147.189/" class="animated flipInX">
-            <img src="../assets/msgboardthumb.png" alt="img01"/>
-            </a>
-            <div class="description">A multi user message board SPA built with Node.js, PostgreSQL, & AngularJS.</div>
-          </li>
-        </ul>
       <div id = "sub-header">
         <h1>Mobile</h1>
       </div>
