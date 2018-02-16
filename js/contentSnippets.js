@@ -44,7 +44,7 @@ function snippets(){
             <a href="http://159.89.147.189/" class="animated flipInX">
             <img src="../assets/msgboardthumb.png" alt="img01"/>
             </a>
-            <div class="description">A multi user message board SPA built with Node.js, PostgreSQL, and AngularJS.</div>
+            <div class="description">A multi user message board SPA built with Node.js, PostgreSQL, & AngularJS.</div>
           </li>
         </ul>
       <div id = "sub-header">
@@ -55,7 +55,7 @@ function snippets(){
             <a href="https://github.com/cozpon/Shadee" class="animated flipInX">
             <img src="../assets/shadethumb.png" alt="Shade, a social video platform for iOS"/>
             </a>
-            <div class="description">A social video platform for iOS built with Node.js, PostgreSQL, & React Native.</div>
+            <div class="description">A social video platform for iOS built with Node.js, PostgreSQL, AWS, & React Native.</div>
           </li>
         </ul>
     </div>
