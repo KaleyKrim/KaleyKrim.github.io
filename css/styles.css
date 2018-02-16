@@ -16,6 +16,11 @@ body {
   flex: 1 0 auto;
 }
 
+.description{
+  color: #666666;
+  font-size: 90%;
+}
+
 .header {
   padding: 10px 16px;
   background-color: black;

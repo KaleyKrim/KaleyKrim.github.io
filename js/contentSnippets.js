@@ -27,11 +27,13 @@ function snippets(){
           <a href="http://165.227.60.172/" class="animated flipInX">
             <img src="../assets/pixelpainterthumb.png" alt="Pixel Party, a realtime javascript paint app"/>
           </a>
+          <div class="description">A realtime painting/gallery app built with Node.js, PostgreSQL & Socket.io.</div>
         </li>
         <li>
           <a href="http://kaleykriminger.com/movies.html" class="animated flipInX">
             <img src="../assets/sophoclesthumb.png" alt="Sophocles' Movie Recommendation Cafe"/>
           </a>
+          <div class="description">A fun movie recommendation app that calls the OMDB API.</div>
         </li>
       </ul>
       <div id = "sub-header">
@@ -42,6 +44,7 @@ function snippets(){
             <a href="http://159.89.147.189/" class="animated flipInX">
             <img src="../assets/msgboardthumb.png" alt="img01"/>
             </a>
+            <div class="description">A multi user message board SPA built with Node.js, PostgreSQL, and AngularJS.</div>
           </li>
         </ul>
       <div id = "sub-header">
@@ -52,6 +55,7 @@ function snippets(){
             <a href="https://github.com/cozpon/Shadee" class="animated flipInX">
             <img src="../assets/shadethumb.png" alt="Shade, a social video platform for iOS"/>
             </a>
+            <div class="description">A social video platform for iOS built with Node.js, PostgreSQL, & React Native.</div>
           </li>
         </ul>
     </div>
