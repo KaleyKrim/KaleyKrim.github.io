@@ -28,6 +28,12 @@ function snippets(){
             </a>
             <div class="description">A multi user message board SPA built with Node.js, PostgreSQL, & AngularJS.</div>
           </li>
+          <li>
+            <a href="http://165.227.22.200/" class="animated flipInX">
+            <img src="../assets/ideathumb.png" alt="img01"/>
+            </a>
+            <div class="description">An idea board SPA built with Node.js, PostgreSQL, React.js, & AWS.</div>
+          </li>
         </ul>
     <div id = "sub-header">
       <h1>Just for Fun</h1>
