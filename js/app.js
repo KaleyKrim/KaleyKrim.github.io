@@ -1,20 +1,18 @@
 const contentDiv = document.getElementById('content');
-const homeButton = document.getElementById('home');
+const aboutButton = document.getElementById('about');
 const portfolioButton = document.getElementById('portfolio');
 const dropButton = document.getElementById('dropbtn');
 const myDropDown = document.getElementById('myDropdown');
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
 
 var currentPage = null;
 
-homeButton.addEventListener('click', ()=>{
+aboutButton.addEventListener('click', ()=>{
   contentDiv.innerHTML = snippets().home;
   if(currentPage){
     currentPage.style.border = null;
   }
-  currentPage = homeButton;
-  homeButton.style.border = '1px solid white';
+  currentPage = aboutButton;
+  aboutButton.style.border = '1px solid #FF9C98';
 });
 
 portfolioButton.addEventListener('click', ()=>{
@@ -23,21 +21,9 @@ portfolioButton.addEventListener('click', ()=>{
     currentPage.style.border = null;
   }
   currentPage = portfolioButton;
-  portfolioButton.style.border = '1px solid white';
+  portfolioButton.style.border = '1px solid #FF9C98';
 });
 
 dropButton.addEventListener('mouseover', ()=>{
   myDropDown.classList.toggle("show");
 });
-
-window.onscroll = function() {
-  stickyHeader();
-};
-
-function stickyHeader() {
-  if (window.pageYOffset >= sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}

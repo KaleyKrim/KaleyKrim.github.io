@@ -1,19 +1,47 @@
+html{
+  height: 100%;
+  width: 100%;
+  display: table;
+}
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
   font-family: "Lucida Grande", Tahoma;
   font-size: 16px;
   height: 100%;
   width: 100%;
-  margin: 0;
+  display:table-cell;
   display: flex;
   flex-direction: column;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+}
+
+#header{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#logo{
+  height: 250px;
+  width: 250px;
+  background-image: url("../assets/kaleyslogo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .pink{
   font-weight: bold;
-}
-
-.main{
-  flex: 1 0 auto;
 }
 
 .description{
@@ -21,77 +49,60 @@ body {
   font-size: 90%;
 }
 
-.header {
-  padding: 10px 16px;
-  background-color: black;
-  height: 120px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  z-index: 99;
-}
-
 #header-text{
   text-align: left;
 }
 
-.d3 {
-  margin: 0.5em 0;
-  font-family: "Helvetica Neue", sans-serif;
-  font-size: 2.5em;
-  color: white;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-  text-shadow: -0.03em 0 0 #F22613,  0.03em 0 0 #00FFFF;
-}
-
 
 #navigation {
+  width: 50%;
+  margin: auto;
   display: flex;
-  justify-content: space-between;
-  margin-top: 90px;
-  margin-right: 10%;
-  width: 330px;
+  justify-content: space-around;
 }
 
 .nav{
   font-family: "Lucida Grande", Tahoma;
-  font-size: 80%;
+  font-size: 100%;
   font-weight: lighter;
   font-variant: normal;
   text-transform: uppercase;
-  color: #666666;
+  color: black;
   margin-top: 10px;
   text-align: center!important;
   letter-spacing: 0.3em;
-  color: white;
   display: flex;
   justify-content: center;
   padding: 2px;
+}
+
+a{
+  color: #73C59C;
+  text-decoration: none;
+}
+
+#content a:hover{
+  text-decoration: underline;
 }
 
 .nav:hover{
   cursor: pointer;
 }
 
-.sticky{
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + #content {
-  padding-top: 120px;
-}
-
-.bio-block{
-  border: 1px solid black;
-  box-shadow: 3px 3px 3px grey;
-  background-color: white;
+#content{
+  height: 100%;
+  background-color: #FFF3F1;
   text-align: center;
   padding: 10px;
   font-size: 80%;
+  margin-top: 30px;
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 70%;
+  animation-name: fadeIn;
+  animation-duration: 1s;
 }
 
 .dropbtn {
@@ -104,11 +115,15 @@ body {
   margin-top: 26px;
   flex-direction: column;
   position: absolute;
-  background-color: #F6F0FF;
+  background-color: #73C59C;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  border: black 1px solid;
+}
+
+.bio-block{
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .links{
@@ -121,7 +136,7 @@ body {
 }
 
 .links:hover {
-  background-color: white;
+  background-color: #98d3b6;
 }
 
 .show {
@@ -134,35 +149,12 @@ body {
   font-weight: lighter;
   font-variant: normal;
   text-transform: uppercase;
-  color: #A79FD4;
-  margin-top: 20px;
+  color: #FF0070;
   text-align: center!important;
   letter-spacing: 0.3em;
   width: 100%;
 }
 
-#content {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin: auto;
-  width: 70%;
-  border-style: 1px solid #ff424b;
-  animation-name: fadeIn;
-  animation-duration: 1s;
-}
-
-.portfolio{
-  display: inline-block;
-  border-style: solid;
-  border-color: #FF0064;
-  padding: 5%;
-  width: 250px;
-  height: 250px;
-  color: white;
-  background-color: #FF0064;
-  text-align: center;
-}
 
 #contact{
   display: flex;
@@ -198,14 +190,13 @@ body {
 }
 
 
-a {
-  color: black;
-  font-weight: bold;
+.links a{
+  color: white;
   text-decoration: none;
 }
 
-a:visited {
-  color: black;
+.links a:visited {
+  color: white;
 }
 
 @media (min-width: 400px){
@@ -223,25 +214,9 @@ a:visited {
     font-size: 200%;
   }
 
-  #linkedin{
-    opacity: .7;
-  }
-
-  #github{
-    opacity: .7;
-  }
-
-  #linkedin:hover{
-    opacity: 1.0;
-  }
-
-  #github:hover{
-    opacity: 1.0;
-  }
-
   .nav:hover{
-    color: #A79FD4;
-    transition-duration: .5s;
+    color: #73C59C;
+    transition-duration: .3s;
   }
 }
 
@@ -257,20 +232,20 @@ a:visited {
   display: inline-block;
   margin: 5px 5px 5px 5px;
   vertical-align: top;
-    width:212px;
+  width:212px;
 }
 
 .portfolio-grid li > a,
 .portfolio-grid li > a img {
-    width: 100%;
+  width: 100%;
   border: none;
   outline: none;
   display: block;
   position: relative;
-    transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
 }
 
 .portfolio-grid li > a img:hover {
